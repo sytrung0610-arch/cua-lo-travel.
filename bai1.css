@@ -1,0 +1,317 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f9fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(90deg, #0077b6, #00b4d8);
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffdd57;
+}
+
+.hero {
+    min-height: 550px;
+    background:
+        linear-gradient(rgba(0,0,0,0.35),
+                        rgba(0,0,0,0.55)),
+        url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1400")
+        center / cover no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 5vw, 55px);
+    margin-bottom: 20px;
+    text-shadow: 2px 3px 6px #333;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff9800;
+    color: white;
+    padding: 13px 28px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e68900;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+}
+
+section {
+    padding: 70px 8%;
+    scroll-margin-top: 90px;
+}
+
+section h2 {
+    text-align: center;
+    color: #0077b6;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 17px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.content {
+    padding: 22px;
+}
+
+.content h3 {
+    font-size: 22px;
+    color: #0077b6;
+    margin-bottom: 12px;
+}
+
+.content p {
+    margin-bottom: 18px;
+}
+
+.price {
+    color: #e67e22;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.features {
+    background: #e8f5fc;
+}
+
+.feature {
+    text-align: center;
+    padding: 30px 20px;
+    background: white;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature .symbol {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    color: #0077b6;
+    margin-bottom: 12px;
+}
+
+/* ===== ĐÁNH GIÁ DU KHÁCH ===== */
+.reviews {
+    background: #e8f5fc;
+}
+
+.review {
+    background: white;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.review:hover {
+    transform: translateY(-5px);
+}
+
+.review h3 {
+    color: #0077b6;
+    margin-bottom: 15px;
+}
+
+/* ===== LIÊN HỆ ===== */
+.contact {
+    text-align: center;
+    background: #fff;
+}
+
+.contact form {
+    max-width: 550px;
+    margin: auto;
+}
+
+.contact input,
+.contact textarea {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 15px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    transition: 0.3s;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #00b4d8;
+    outline: none;
+    box-shadow: 0 0 6px rgba(0,180,216,0.3);
+}
+
+.contact button {
+    margin-top: 10px;
+}
+
+footer {
+    background: #023e8a;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+footer h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+footer p {
+    margin-bottom: 8px;
+}
+
+footer a {
+    color: #ffdd57;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 400px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 45px 5%;
+    }
+
+    section h2 {
+        font-size: 27px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card img {
+        height: 200px;
+    }
+}

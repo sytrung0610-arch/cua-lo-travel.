@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="vi" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám Phá Biển Cửa Lò - Cửa Lò Travel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#f59e0b',
+                            goldHover: '#d97706',
+                            darkBg: '#121212',
+                            cardBg: '#1e1e24',
+                            cardInner: '#25252c',
+                            border: '#33333d',
+                            blueTitle: '#60a5fa'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121212;
+            color: #e5e7eb;
+        }
+        .dark-card {
+            background-color: #1e1e24;
+            border: 1px solid #2d2d38;
+        }
+        .dark-card:hover {
+            border-color: #404050;
+        }
+    </style>
+</head>
+<body class="bg-[#121212] text-gray-200 antialiased selection:bg-amber-500 selection:text-black">
+
+    <header class="sticky top-0 z-50 bg-[#121212]/95 backdrop-blur-md border-b border-[#22222a]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2">
+                <span class="text-xl sm:text-2xl font-extrabold tracking-wide text-white uppercase">
+                    CỬA LÒ <span class="text-blue-500">TRAVEL</span>
+                </span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+                <a href="#trang-chu" class="text-blue-400 font-semibold hover:text-blue-300 transition-colors">Trang chủ</a>
+                <a href="#diem-den" class="text-gray-300 hover:text-white transition-colors">Điểm đến</a>
+                <a href="#am-thuc" class="text-gray-300 hover:text-white transition-colors">Ẩm thực</a>
+                <a href="#khach-san" class="text-gray-300 hover:text-white transition-colors">Khách sạn</a>
+<a href="#lien-he" class="text-gray-300 hover:text-white transition-colors">Liên hệ</a>
+            </nav>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-[#18181c] border-b border-[#282830] px-4 pt-2 pb-4 space-y-2 text-sm">
+            <a href="#trang-chu" class="block py-2 text-blue-400 font-medium">Trang chủ</a>
+            <a href="#diem-den" class="block py-2 text-gray-300 hover:text-white">Điểm đến</a>
+            <a href="#am-thuc" class="block py-2 text-gray-300 hover:text-white">Ẩm thực</a>
+            <a href="#khach-san" class="block py-2 text-gray-300 hover:text-white">Khách sạn</a>
+            <a href="#lien-he" class="block py-2 text-gray-300 hover:text-white">Liên hệ</a>
+        </div>
+    </header>
+
+    <section id="trang-chu" class="relative min-h-[480px] lg:min-h-[540px] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=80" 
+                 alt="Cửa Lò Sunset Beach" 
+                 class="w-full h-full object-cover object-center filter brightness-90">
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#121212] via-transparent to-black/30"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-4 text-center py-16">
+       
+            </h1>
+            <p class="text-sm sm:text-base lg:text-lg text-gray-200 max-w-2xl mx-auto font-normal leading-relaxed mb-8 drop-shadow">
+                Trải nghiệm bãi biển cát trắng mịn, ngắm hoàng hôn và thưởng thức hải sản tươi ngon bậc nhất Miền Trung
+            </p>
+            <div class="flex flex-wrap items-center justify-center gap-3">
+                <a href="#diem-den" class="px-6 py-2.5 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold rounded-md shadow-md transition-all duration-200 text-sm">
+                    Khám phá ngay
+                </a>
+                <a href="#lien-he" class="px-6 py-2.5 bg-gray-900/90 hover:bg-black border border-gray-600 hover:border-gray-400 text-white font-medium rounded-md backdrop-blur-sm transition-all duration-200 text-sm">
+                    Đặt tour ngay
+                </a>
+            </div>
+</div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 mb-16 relative z-20">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div class="dark-card rounded-lg p-6 text-center transition-all duration-300">
+                <div class="w-10 h-10 mx-auto mb-3 text-amber-400 flex items-center justify-center">
+                    <i class="fa-solid fa-sun text-2xl"></i>
+                </div>
+                <h3 class="text-base font-bold text-white mb-2">Nắng Vàng Cát Mịn</h3>
+                <p class="text-xs text-gray-400 leading-relaxed">
+                    Bãi biển trải dài hơn 10km với cát mịn, nước trong xanh và sóng êm ái, lý tưởng cho kỳ nghỉ gia đình.
+                </p>
+            </div>
+
+            <div class="dark-card rounded-lg p-6 text-center transition-all duration-300">
+                <div class="w-10 h-10 mx-auto mb-3 text-blue-400 flex items-center justify-center">
+                    <i class="fa-solid fa-fish text-2xl"></i>
+                </div>
+                <h3 class="text-base font-bold text-white mb-2">Hải Sản Tươi Sống</h3>
+                <p class="text-xs text-gray-400 leading-relaxed">
+                    Thưởng thức mực nháy, ghẹ bơi, tôm hùm tươi ngon tại các nhà hàng ven biển hấp dẫn.
+                </p>
+            </div>
+
+            <div class="dark-card rounded-lg p-6 text-center transition-all duration-300">
+                <div class="w-10 h-10 mx-auto mb-3 text-emerald-400 flex items-center justify-center">
+                    <i class="fa-solid fa-cable-car text-2xl"></i>
+                </div>
+                <h3 class="text-base font-bold text-white mb-2">Cáp Treo Đảo Ngư</h3>
+                <p class="text-xs text-gray-400 leading-relaxed">
+                    Xuyên mây vượt biển kết nối đất liền với đảo Song Ngư, ngắm toàn cảnh Cửa Lò.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="diem-den" class="py-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+        <div class="text-center mb-8">
+            <h2 class="text-xl sm:text-2xl font-bold text-blue-400 tracking-tight mb-1">
+                Điểm Đến Nổi Bật
+            </h2>
+            <p class="text-gray-400 text-xs sm:text-sm">Những cảnh đẹp không thể bỏ qua khi du lịch Cửa Lò</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <div class="dark-card rounded-lg overflow-hidden flex flex-col justify-between">
+                <div>
+<div class="h-44 overflow-hidden relative">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Fi_Cn34kEPdX3H4an6nqpCNK3g0jJ_AaJ8g8XzToDw&s=10" 
+                             alt="Bãi Biển Cửa Lò" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-sm font-bold text-white mb-2">Bãi Biển Cửa Lò</h3>
+                        <p class="text-xs text-gray-400 leading-relaxed mb-4">
+                            Bãi biển dài với không khí mát mẻ. Đây là điểm đến lý tưởng để thư giãn và tắm biển.
+                        </p>
+                    </div>
+                </div>
+                <div class="px-4 pb-4 flex items-center gap-2">
+                    <button onclick="openModal('Bãi Biển Cửa Lò', 'Bãi biển Cửa Lò trải dài gần 10km với bờ cát mịn màng, nước biển trong xanh và sóng biển êm dịu, rất thích hợp cho du khách tắm biển và nghỉ dưỡng.')" class="px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white rounded text-xs font-medium transition-colors">
+                        Xem thêm
+                    </button>
+                    <button onclick="scrollToSection('lien-he')" class="px-3 py-1 bg-emerald-600 hover:bg-emerald-700 text-white rounded text-xs font-medium transition-colors">
+                        Đặt tour
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 2: Đảo Song Ngư -->
+            <div class="dark-card rounded-lg overflow-hidden flex flex-col justify-between">
+                <div>
+                    <div class="h-44 overflow-hidden relative">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzCA1r1sLPDAHNO2aEGvvhjSCoqxAFtsGyqNmmmFMRvQ&s=10" 
+                             alt="Đảo Song Ngư" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-sm font-bold text-white mb-2">Đảo Song Ngư</h3>
+                        <p class="text-xs text-gray-400 leading-relaxed mb-4">
+                            Hòn đảo với vẻ đẹp hoang sơ, bãi nước trong xanh cùng thảm thực vật phong phú.
+                        </p>
+                    </div>
+                </div>
+                <div class="px-4 pb-4 flex items-center gap-2">
+                    <button onclick="openModal('Đảo Song Ngư', 'Đảo Song Ngư gồm 2 hòn đảo nằm ngoài khơi Cửa Lò. Nơi đây có không khí trong lành, bãi sỏi màu độc đáo và chùa Song Ngư cổ kính linh thiêng.')" class="px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white rounded text-xs font-medium transition-colors">
+                        Xem thêm
+                    </button>
+<button onclick="scrollToSection('lien-he')" class="px-3 py-1 bg-emerald-600 hover:bg-emerald-700 text-white rounded text-xs font-medium transition-colors">
+                        Đặt tour
+                    </button>
+                </div>
+            </div>
+
+            <div class="dark-card rounded-lg overflow-hidden flex flex-col justify-between">
+                <div>
+                    <div class="h-44 overflow-hidden relative">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmo8wVcXg0ADw3GoYzHc-EWXZonU1gwo-TsG6ZU7usMg&s=10" 
+                             alt="Làng Chài Cửa Hội" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-sm font-bold text-white mb-2">Làng Chài Cửa Hội</h3>
+                        <p class="text-xs text-gray-400 leading-relaxed mb-4">
+                            Nơi khám phá nét sinh hoạt truyền thống của ngư dân và trải nghiệm cuộc sống ngư dân.
+                        </p>
+                    </div>
+                </div>
+                <div class="px-4 pb-4 flex items-center gap-2">
+                    <button onclick="openModal('Làng Chài Cửa Hội', 'Đến với làng chài Cửa Hội vào bình minh, bạn sẽ đón thuyền chài cập bến, mua hải sản tươi sống giá gốc và tìm hiểu nhịp sống bình dị của ngư dân xứ Nghệ.')" class="px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white rounded text-xs font-medium transition-colors">
+                        Xem thêm
+                    </button>
+                    <button onclick="scrollToSection('lien-he')" class="px-3 py-1 bg-emerald-600 hover:bg-emerald-700 text-white rounded text-xs font-medium transition-colors">
+                        Đặt tour
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="am-thuc" class="py-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+        <!-- Section Header -->
+        <div class="text-center mb-8">
+            <h2 class="text-xl sm:text-2xl font-bold text-blue-400 tracking-tight mb-1">
+                Ẩm Thực Đặc Sản
+            </h2>
+            <p class="text-gray-400 text-xs sm:text-sm">Hương vị ẩm thực đặc sắc không thể bỏ qua</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+            <!-- Left Side: Gallery of 3 Food Images -->
+            <div class="lg:col-span-6 grid grid-cols-3 gap-3">
+                <div class="rounded-lg overflow-hidden h-48 border border-gray-800">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTzVdzi5ey2kAu1g-aYpJGtmuqE4PTYvuQoN_TbyhY8g&s=10" 
+                         alt="Mực Nháy"
+class="w-full h-full object-cover">
+                </div>
+                <div class="rounded-lg overflow-hidden h-48 border border-gray-800">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQcCTbInZ6extZk7Dse9Q1PILASoVeh-OEkvnCawInXQ&s=10" 
+                         alt="Hàu Nướng" 
+                         class="w-full h-full object-cover">
+                </div>
+                <div class="rounded-lg overflow-hidden h-48 border border-gray-800">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQuf1yGuxKttlEboLE0zXVSnbc1DAR1np66H0DCQOCVw&s=10" 
+                         alt="Cá Thu" 
+                         class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <div class="lg:col-span-6 space-y-4">
+                <!-- Dish 1 -->
+                <div class="flex items-start gap-3">
+                    <div class="w-5 h-5 rounded-full bg-emerald-500 text-black flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold text-emerald-400 mb-0.5">Mực Nháy Cửa Lò</h4>
+                        <p class="text-xs text-gray-300 leading-relaxed">
+                            Mực vừa đánh bắt nướng hoặc hấp tươi ngon, ngọt thịt, giòn sần sật.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <div class="w-5 h-5 rounded-full bg-emerald-500 text-black flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold text-emerald-400 mb-0.5">Mọc Cua Bể</h4>
+                        <p class="text-xs text-gray-300 leading-relaxed">
+                            Món ăn đặc sản độc đáo với thịt cua, giò sống và các gia vị đậm đà.
+                        </p>
+                    </div>
+                </div>
+
+            <div class="flex items-start gap-3">
+                <div class="w-5 h-5 rounded-full bg-emerald-500 text-black flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div>
+                    <h4 class="text-sm font-bold text-emerald-400 mb-0.5">Cá Thu Cửa Lò</h4>
+                    <p class="text-xs text-gray-300 leading-relaxed">
+                        Cá thu nướng hoặc rán giòn thơm ngon, đậm đà vị biển cả.
+                    </p>
+                </div>
+            </div>
+        </div>
+</div>
+</section>
+
+<section id="danh-gia" class="py-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+
+    <div class="text-center mb-10">
+        <h2 class="text-xl sm:text-2xl font-bold text-blue-400 tracking-tight mb-1">
+        </h2>
+        <p class="text-gray-400 text-xs sm:text-sm">Cảm nhận thực tế từ những du khách đã trải nghiệm chuyến đi Cửa Lò</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="dark-card rounded-xl p-6 flex flex-col justify-between relative">
+            <div class="text-amber-400/20 text-4xl absolute top-4 right-5 font-serif select-none pointer-events-none">
+                <i class="fa-solid fa-quote-right"></i>
+            </div>
+            <div>
+                <div class="flex items-center gap-1 text-amber-400 text-xs mb-3">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="text-gray-400 text-[11px] ml-1 font-medium">(5.0)</span>
+                </div>
+                <p class="text-xs text-gray-300 leading-relaxed italic mb-6">
+                    "Gia đình tôi vừa có chuyến nghỉ dưỡng 3 ngày 2 đêm tại Cửa Lò vô cùng tuyệt vời. Biển sạch, bãi cát mịn, mực nháy thì siêu tươi ngọt. Nhất định mùa hè năm sau gia đình tôi sẽ quay lại đây,quá ok!"
+                </p>
+            </div>
+            <div class="flex items-center gap-3 pt-3 border-t border-gray-800">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkPcISpo05fF-yTimw2Fp_XXPzWWQ9QGcs7HbEMxlxSQ&s=10" 
+                     alt="Anh Nguyễn Văn An" 
+                     class="w-10 h-10 rounded-full object-cover border border-amber-400/50">
+                <div>
+                    <h4 class="text-xs font-bold text-white">Nguyễn Văn An</h4>
+                    <p class="text-[11px] text-gray-400"><i class="fa-solid fa-location-dot text-amber-400 mr-1"></i>Hà Nội</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="dark-card rounded-xl p-6 flex flex-col justify-between relative">
+            <div class="text-amber-400/20 text-4xl absolute top-4 right-5 font-serif select-none pointer-events-none">
+                <i class="fa-solid fa-quote-right"></i>
+            </div>
+            <div>
+                <div class="flex items-center gap-1 text-amber-400 text-xs mb-3">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="text-gray-400 text-[11px] font-medium ml-1">(5.0)</span>
+                </div>
+  
+                <p class="text-xs text-gray-300 leading-relaxed italic mb-6">
+                    "Trải nghiệm đi cáp treo ra Đảo Song Ngư thật sự ấn tượng, ngắm toàn cảnh biển Cửa Lò từ trên cao đẹp mê hồn."
+                </p>
+            </div>
+            <div class="flex items-center gap-3 pt-3 border-t border-gray-800">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTArgjpxocMjTUfWEGxWIgNFr0ybbIxi44uXM6dIjy66g&s=10" 
+                     alt="Chị Lê Mai Phương" 
+                     class="w-10 h-10 rounded-full object-cover border border-amber-400/50">
+                <div>
+                    <h4 class="text-xs font-bold text-white">Lê Mai Phương</h4>
+                    <p class="text-[11px] text-gray-400"><i class="fa-solid fa-location-dot text-amber-400 mr-1"></i>TP. Hồ Chí Minh</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="dark-card rounded-xl p-6 flex flex-col justify-between relative">
+            <div class="text-amber-400/20 text-4xl absolute top-4 right-5 font-serif select-none pointer-events-none">
+                <i class="fa-solid fa-quote-right"></i>
+            </div>
+            <div>
+                <div class="flex items-center gap-1 text-amber-400 text-xs mb-3">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="text-gray-400 text-[11px] font-medium ml-1">(5.0)</span>
+                </div>
+                <p class="text-xs text-gray-300 leading-relaxed italic mb-6">
+                    "Chuyến du lịch cùng công ty rất hoành tráng. Đặt tour dịch vụ chu đáo, phòng khách sạn đẹp hướng biển, đồ ăn hải sản tươi rói chế biến vừa vị. Rất đáng tiền!"
+                </p>
+            </div>
+            <div class="flex items-center gap-3 pt-3 border-t border-gray-800">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" 
+                     alt="Anh Trần Hoàng Nam" 
+                     class="w-10 h-10 rounded-full object-cover border border-amber-400/50">
+                <div>
+                    <h4 class="text-xs font-bold text-white">Trần Hoàng Nam</h4>
+                    <p class="text-[11px] text-gray-400"><i class="fa-solid fa-location-dot text-amber-400 mr-1"></i>Bắc Ninh</p>
+                </div>
+</div>
+        </div>
+    </div>
+</section>
+
+    <section id="khach-san" class="py-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+        <div class="text-center mb-8">
+            <h2 class="text-xl sm:text-2xl font-bold text-blue-400 tracking-tight mb-1">
+                Khách Sạn & Nghỉ Dưỡng
+            </h2>
+            <p class="text-gray-400 text-xs sm:text-sm">Không gian nghỉ dưỡng thoải mái cho chuyến đi trọn vẹn</p>
+        </div>
+
+        <p class="text-center text-xs text-gray-400 max-w-lg mx-auto mb-8">
+            Hãy lựa chọn khách sạn phù hợp để tận hưởng kỳ nghỉ tuyệt vời nhất tại biển Cửa Lò.
+        </p>
+
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <div class="dark-card rounded-lg p-4 border border-gray-800">
+                <div class="h-40 rounded overflow-hidden mb-3">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsxJy-tKiwA7ecbE4napzDrKyoIcPH5XDQ1ssg7ZMGbg&s=10" alt="Vinpearl Resort" class="w-full h-full object-cover">
+                </div>
+                <div class="flex items-center justify-between mb-1">
+                    <span class="text-xs text-amber-400 font-semibold">5 Sao</span>
+                    <span class="text-xs text-gray-400"><i class="fa-solid fa-star text-amber-400 mr-1"></i>4.9</span>
+                </div>
+                <h3 class="text-sm font-bold text-white mb-1">Vinpearl Discovery Cửa Hội</h3>
+                <p class="text-xs text-gray-400 mb-3">Khu nghỉ dưỡng cao cấp sang trọng ven biển.</p>
+                <button onclick="openModal('Vinpearl Discovery Cửa Hội', 'Khu nghỉ dưỡng 5 sao bậc nhất Cửa Lò với bãi biển riêng, hồ bơi ngoài trời lớn và dịch vụ cao cấp.')" class="w-full py-1.5 bg-[#282830] hover:bg-amber-400 hover:text-black text-xs font-semibold text-white rounded transition-colors">Xem chi tiết</button>
+            </div>
+
+            <div class="dark-card rounded-lg p-4 border border-gray-800">
+                <div class="h-40 rounded overflow-hidden mb-3">
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80" alt="Muong Thanh Hotel" class="w-full h-full object-cover">
+                </div>
+                <div class="flex items-center justify-between mb-1">
+                    <span class="text-xs text-amber-400 font-semibold">4 Sao</span>
+                    <span class="text-xs text-gray-400"><i class="fa-solid fa-star text-amber-400 mr-1"></i>4.7</span>
+                </div>
+                <h3 class="text-sm font-bold text-white mb-1">Mường Thanh Grand Cửa Lò</h3>
+                <p class="text-xs text-gray-400 mb-3">Vị trí trung tâm, tầm nhìn hướng biển toàn cảnh.</p>
+<button onclick="openModal('Mường Thanh Grand Cửa Lò', 'Khách sạn 4 sao nằm ngay mặt đường Bình Minh, thuận tiện di chuyển tới bãi tắm và khu chợ đêm.')" class="w-full py-1.5 bg-[#282830] hover:bg-amber-400 hover:text-black text-xs font-semibold text-white rounded transition-colors">Xem chi tiết</button>
+            </div>
+
+            <div class="dark-card rounded-lg p-4 border border-gray-800">
+                <div class="h-40 rounded overflow-hidden mb-3">
+                    <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=600&q=80" alt="Saigon Kimlien Resort" class="w-full h-full object-cover">
+                </div>
+                <div class="flex items-center justify-between mb-1">
+                    <span class="text-xs text-amber-400 font-semibold">4 Sao</span>
+                    <span class="text-xs text-gray-400"><i class="fa-solid fa-star text-amber-400 mr-1"></i>4.6</span>
+                </div>
+                <h3 class="text-sm font-bold text-white mb-1">Sài Gòn Kim Liên Resort</h3>
+                <p class="text-xs text-gray-400 mb-3">Khuôn viên xanh mát, không gian yên bình.</p>
+                <button onclick="openModal('Sài Gòn Kim Liên Resort', 'Resort xanh sát biển mang lại trải nghiệm nghỉ dưỡng thư thái, phù hợp cho du lịch gia đình.')" class="w-full py-1.5 bg-[#282830] hover:bg-amber-400 hover:text-black text-xs font-semibold text-white rounded transition-colors">Xem chi tiết</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="lien-he" class="py-10 bg-[#16161c] border-t border-[#22222a]">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <h2 class="text-xl font-bold text-white mb-2">Liên Hệ Đặt Tour & Tư Vấn</h2>
+            <p class="text-xs text-gray-400 mb-6">Đăng ký thông tin để nhận được ưu đãi dịch vụ tốt nhất tại Cửa Lò</p>
+
+            <form onsubmit="handleFormSubmit(event)" class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <input type="text" placeholder="Họ và tên" required class="px-3 py-2 bg-[#1f1f26] border border-gray-700 rounded text-xs text-white focus:outline-none focus:border-amber-400">
+                <input type="tel" placeholder="Số điện thoại" required class="px-3 py-2 bg-[#1f1f26] border border-gray-700 rounded text-xs text-white focus:outline-none focus:border-amber-400">
+                <button type="submit" class="px-4 py-2 bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold rounded text-xs transition-colors">
+                    Đăng ký ngay
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-[#0e0e11] border-t border-[#1a1a20] py-6 text-center text-xs text-gray-500">
+        <p>© 2026 Cửa Lò Travel. Tất cả quyền được bảo lưu.</p>
+    </footer>
+<div id="info-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-[#1e1e24] border border-gray-700 rounded-lg p-6 max-w-md w-full relative shadow-2xl">
+            <button onclick="closeModal()" class="absolute top-3 right-3 text-gray-400 hover:text-white">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <h3 id="modal-title" class="text-base font-bold text-blue-400 mb-2">Tên địa điểm</h3>
+            <p id="modal-content" class="text-xs text-gray-300 leading-relaxed mb-6">Nội dung...</p>
+            <div class="text-right">
+                <button onclick="closeModal()" class="px-4 py-1.5 bg-amber-400 text-black text-xs font-bold rounded hover:bg-amber-500">Đóng</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast" class="fixed bottom-5 right-5 bg-emerald-600 text-white px-4 py-2.5 rounded shadow-lg text-xs hidden z-50 flex items-center gap-2">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toast-message">Thông báo</span>
+    </div>
+
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function openModal(title, content) {
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-content').innerText = content;
+            document.getElementById('info-modal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('info-modal').classList.add('hidden');
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            showToast('Đăng ký thành công! Chúng tôi sẽ liên hệ lại sớm nhất.');
+            e.target.reset();
+        }
+
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toast-message').innerText = msg;
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
